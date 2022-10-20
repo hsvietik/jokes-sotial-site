@@ -1,0 +1,10 @@
+/*# sourceMappingURL=App.css.map */
+@use "../src/Scss/variables" as *;
+
+// @import "./Scss/variables";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&display=swap");
+@import "./Scss/mixins";
+@import "./Components/NavBar/navBar";
+@import "./Components/AddPost/AddPost.scss";
+@import "./Components/VeiwPost/ViewPost";
