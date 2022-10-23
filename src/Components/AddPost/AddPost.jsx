@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "./AddPost.scss";
 import toastr from "reactjs-toastr";
 
 const AddPost = (props) => {
   const [formValue, setFormValue] = useState({
+    id: "",
     username: "",
     post: "",
     img: "",
@@ -23,14 +23,15 @@ const AddPost = (props) => {
     let keyToChange = e.target.name;
     setFormValue({ ...formValue, [keyToChange]: newVal });
     const newState = { ...formValue };
+    console.log(newState);
   };
 
   // Handle submit
   const handleSubmit = (e) => {
+    // e.preventDefault();
     if (formValue.username != null) {
       props.functionFromParent(formValue);
     } else {
-      e.preventDefault();
       alert("Please fill up username");
     }
   };
@@ -69,12 +70,16 @@ const AddPost = (props) => {
               onChange={(e) => handleChange(e)}
             />
           </Form.Group>
-          <Button type="submit" onClick={() => handleSubmit()}>
+
+          <Button
+            type="submit"
+            className="submit-btn"
+            onClick={() => handleSubmit()}
+          >
             Add
           </Button>
-        </Form>
 
-        <Link>View</Link>
+        </Form>
       </div>
     </>
   );

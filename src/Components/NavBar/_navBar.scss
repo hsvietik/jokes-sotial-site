@@ -24,6 +24,8 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  background-color: white;
+  border-radius: 8px;
 }
 .nav-container {
   padding: 15px;
@@ -31,6 +33,12 @@ a {
 }
 .nav-btn {
   padding: 10px;
+  color: white;
+  border-radius: 6px;
+}
+.nav-btn:hover,
+.nav-btn:focus{
+  color: black;
 }
 .nav-btn.view {
   background-color: $red-color;

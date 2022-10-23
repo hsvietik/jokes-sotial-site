@@ -6,34 +6,41 @@ import ViewPost from "./Components/VeiwPost/ViewPost";
 import "./App.scss";
 
 function App() {
-  const [data, setData] = useState([]);
-
-  const [jokes, changeJokes] = useState([
+  const [data, setData] = useState([
     {
+      id: 1,
       username: "creator",
-      text: "What are the similarities between Java and JavaScript?",
-      image: "./images/post1.png",
+      post: "What are the similarities between Java and JavaScript?",
+      img: "./images/post1.png",
     },
     {
-      username: "creator",
-      text: "The difference between a while and a do…while loop",
-      image: "./images/post2.jpeg",
+      id: 2,
+      username: "creator1",
+      post: "The difference between a while and a do…while loop",
+      img: "./images/post2.jpeg",
     },
     {
-      username: "creator",
-      text: "When a programmer tries to remove all the bugs from the code",
-      image: "./images/post3.jpeg",
+      id: 3,
+      username: "creator2",
+      post: "When a programmer tries to remove all the bugs from the code",
+      img: "./images/post3.jpeg",
     },
     {
-      username: "creator",
-      text: "When you finally decide to go to sleep after a long day of work",
-      image: "./images/post4.jpeg",
+      id: 4,
+      username: "creator3",
+      post: "When you finally decide to go to sleep after a long day of work",
+      img: "./images/post4.jpeg",
     },
   ]);
 
-  useEffect(() => {}, []);
+  // useEffect(() => {
+  //   const datas = localStorage.getItem("data");
+
+  //   setData(JSON.parse(datas) || []);
+  // }, []);
 
   function updateMyValues(value) {
+    console.log(value);
     setData((prev) => {
       let newState = [...prev, value];
       localStorage.setItem("data", JSON.stringify(newState));
@@ -52,12 +59,12 @@ function App() {
             index
             element={
               <AddPost
-                functionFromParent={(val) => updateMyValues(val)}
-                changeJokes={changeJokes}
+              functionFromParent={(value) => updateMyValues(value)}
+              
               />
             }
           />
-          <Route path="/viewpost" element={<ViewPost jokes={jokes} />} />
+          <Route path="/viewpost" element={<ViewPost data={data} />} />
         </Routes>
       </div>
     </>

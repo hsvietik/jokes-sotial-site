@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 import "./_navBar.scss";
 
 const NavBar = () => {
@@ -17,12 +18,18 @@ const NavBar = () => {
           />{" "}
         </Navbar.Brand>
         <Nav className="nav-buttons">
-          <Nav.Link className="nav-btn view" to="/viewpost">
+          <Link to="/viewpost" className="nav-btn view">
             View Jokes
-          </Nav.Link>
-          <Nav.Link className="nav-btn add" to="/">
+          </Link>
+          <Link to="/" className="nav-btn add">
+            Add Jokes
+          </Link>
+          {/* <Nav.Link className="nav-btn view" to="/viewpost">
+            View Jokes
+          </Nav.Link> */}
+          {/* <Nav.Link className="nav-btn add" to="/addpost">
             Add Joke
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
       </Container>
     </Navbar>
