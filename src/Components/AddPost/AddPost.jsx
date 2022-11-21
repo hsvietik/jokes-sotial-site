@@ -62,9 +62,9 @@ const AddPost = (props) => {
             />
           </Form.Group>
           <Form.Group controlId="formFile" className="mb-3">
-            <Form.Label>Browse</Form.Label>
+            <Form.Label>Add link to picture</Form.Label>
             <Form.Control
-              type="file"
+              type="text"
               name="img"
               value={formValue.img}
               onChange={(e) => handleChange(e)}
@@ -78,7 +78,6 @@ const AddPost = (props) => {
           >
             Add
           </Button>
-
         </Form>
       </div>
     </>

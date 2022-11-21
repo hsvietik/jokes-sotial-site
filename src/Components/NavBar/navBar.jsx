@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <Navbar bg="light" variant="light">
       <Container className="nav-container">
-        <Navbar.Brand href="#view">
+        <Navbar.Brand href="/">
           {" "}
           <img
             className="logo"
@@ -18,18 +18,12 @@ const NavBar = () => {
           />{" "}
         </Navbar.Brand>
         <Nav className="nav-buttons">
-          <Link to="/viewpost" className="nav-btn view">
+          <Link to="/" className="nav-btn view">
             View Jokes
           </Link>
-          <Link to="/" className="nav-btn add">
+          <Link to="/addpost" className="nav-btn add">
             Add Jokes
           </Link>
-          {/* <Nav.Link className="nav-btn view" to="/viewpost">
-            View Jokes
-          </Nav.Link> */}
-          {/* <Nav.Link className="nav-btn add" to="/addpost">
-            Add Joke
-          </Nav.Link> */}
         </Nav>
       </Container>
     </Navbar>

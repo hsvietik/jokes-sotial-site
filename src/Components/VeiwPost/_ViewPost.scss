@@ -1,0 +1,21 @@
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.heart-btn {
+  background-color: white;
+  border: transparent;
+  color: black;
+}
+.heart-btn:hover,
+.heart-btn:focus {
+  background-color: white;
+  color: #e61624;
+}
+.count-bar {
+  display: flex;
+  justify-content: space-between;
+}
