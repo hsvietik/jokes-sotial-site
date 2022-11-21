@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jokes-sotial-site/static/css/main.4aa895cc.css",
-    "main.js": "/jokes-sotial-site/static/js/main.b2638ecc.js",
+    "main.css": "/jokes-sotial-site/static/css/main.fa36bbb4.css",
+    "main.js": "/jokes-sotial-site/static/js/main.69484f53.js",
     "static/js/787.dc07281d.chunk.js": "/jokes-sotial-site/static/js/787.dc07281d.chunk.js",
     "static/media/Joke-logo.png": "/jokes-sotial-site/static/media/Joke-logo.aaf09d6c89fccf4bd38a.png",
     "index.html": "/jokes-sotial-site/index.html",
-    "main.4aa895cc.css.map": "/jokes-sotial-site/static/css/main.4aa895cc.css.map",
-    "main.b2638ecc.js.map": "/jokes-sotial-site/static/js/main.b2638ecc.js.map",
+    "main.fa36bbb4.css.map": "/jokes-sotial-site/static/css/main.fa36bbb4.css.map",
+    "main.69484f53.js.map": "/jokes-sotial-site/static/js/main.69484f53.js.map",
     "787.dc07281d.chunk.js.map": "/jokes-sotial-site/static/js/787.dc07281d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa895cc.css",
-    "static/js/main.b2638ecc.js"
+    "static/css/main.fa36bbb4.css",
+    "static/js/main.69484f53.js"
   ]
 }
